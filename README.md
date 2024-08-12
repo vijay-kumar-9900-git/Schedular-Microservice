@@ -9,7 +9,7 @@ This project implements a job scheduling microservice using Flask, APScheduler, 
 - **Controller:** Handles API requests and routes them to the appropriate service methods.
 - **Services:** Contains business logic for job scheduling, execution, and database interactions.
 - **Database:** PostgreSQL is used for storing job details and scheduling information.
-- **`Service.py`:** Initializes the Flask application and sets up the background scheduler ansd It Will Create Table in Database If It Not Exists.
+- **`Service.py`:** Initializes the Flask application and sets up the background scheduler ansd It Will Create Table in Database If It Not Exists with columns like id,name,interval,job_details,last_run,next_run..
 - **`queries.py`:** Contains SQL queries used for interacting with the PostgreSQL database.
 --Note: If you wish to use a different database (e.g., MySQL, SQLite), modify the db_connection.py file to configure the connection for the desired database and update the SQL queries in queries.py accordingly.
 
