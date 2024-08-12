@@ -54,12 +54,14 @@ Payload:
 Get All Jobs:
 
 Endpoint: /jobs
+
 Method: GET
 
 
 Get Job by ID:
 
 Endpoint: /get_job_id
+
 Method: GET
 
 API Response Status Logging
@@ -68,5 +70,7 @@ API response statuses are logged to scheduler.log.
 Job Execution and Updates
 
 One-Time Jobs: When a one-time job is executed, the last_run time is updated in the database. The next_run time is not applicable for one-time jobs and thus remains unchanged.
+
 Recurring Jobs: For recurring jobs, after execution, both the last_run and next_run times are updated in the database. The next_run time is calculated based on the job's interval.
+
 Example: If a job is scheduled to run every Monday at 1:00 AM (0 1 * * 1), it will execute weekly at that time. After execution, the next_run time will be updated to the next Monday at 1:00 AM and also job will automatically update (handled in code)
