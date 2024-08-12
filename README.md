@@ -32,7 +32,7 @@ This project implements a job scheduling microservice using Flask, APScheduler, 
    
 2.pip install -r requirements.txt
 
-Running the Application
+## Running the Application
 
 1.Start the Flask Application:
 python Service.py
@@ -64,10 +64,10 @@ Endpoint: /get_job_id
 
 Method: GET
 
-**API Response Status Logging
+## API Response Status Logging
 API response statuses are logged to scheduler.log.
 
-**Job Execution and Updates
+## Job Execution and Updates
 
 One-Time Jobs: When a one-time job is executed, the last_run time is updated in the database. The next_run time is not applicable for one-time jobs and thus remains unchanged.
 
