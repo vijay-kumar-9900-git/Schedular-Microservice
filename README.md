@@ -52,17 +52,15 @@ Payload:
 }
 
 Get All Jobs:
-
 Endpoint: /jobs
-
 Method: GET
 
 
 Get Job by ID:
-
 Endpoint: /get_job_id
-
 Method: GET
+payload:
+{"job_id":2}
 
 ## API Response Status Logging
 API response statuses are logged to scheduler.log.
