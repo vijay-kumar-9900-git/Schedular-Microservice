@@ -43,7 +43,9 @@ The application In Default will run on http://127.0.0.1:5000.
 Create Job:
 
 Endpoint: /jobs
+
 Method: POST
+
 Payload:
 {
   "name": "Job Name",
@@ -52,13 +54,18 @@ Payload:
 }
 
 Get All Jobs:
-Endpoint: /jobs
+
+Endpoint: /get_jobs
+
 Method: GET
 
 
 Get Job by ID:
+
 Endpoint: /get_job_id
+
 Method: GET
+
 payload:
 {"job_id":2}
 
