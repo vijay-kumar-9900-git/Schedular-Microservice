@@ -27,7 +27,7 @@ This project implements a job scheduling microservice using Flask, APScheduler, 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/vijay-kumar-9900-git/Schedular-Microservice.git
    cd your-repository
    
 2.pip install -r requirements.txt
