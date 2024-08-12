@@ -33,6 +33,7 @@ This project implements a job scheduling microservice using Flask, APScheduler, 
 2.pip install -r requirements.txt
 
 Running the Application
+
 1.Start the Flask Application:
 python Service.py
 The application In Default will run on http://127.0.0.1:5000.
