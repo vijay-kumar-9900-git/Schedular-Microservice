@@ -132,7 +132,7 @@ class JobService:
                 month=cron_parts[3],
                 day_of_week=cron_parts[4]
             )
-        else:  # Default to interval trigger in minutes
+        else: 
             trigger = CronTrigger(minute='*/' + interval)
 
         self.scheduler.add_job(
